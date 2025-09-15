@@ -3,7 +3,7 @@ const getPeliculas = async () => {
     const data = await fetch (`http://localhost/cinestar_sweb_php/peliculas/${id}`)
     if (data.status == 200){
         const peliculas = await data.json()
-        let html = `<br/><h1>Cartelera</h1><br/>`
+        let html = ``
         peliculas.data.forEach(pelicula => {
             html += `				
 				<div class="contenido-pelicula">

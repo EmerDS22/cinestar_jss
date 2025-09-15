@@ -1,4 +1,5 @@
 const getCines = async () => {
+    const id = (new URLSearchParams(window.location.search)).get('id')
     const data = await fetch (`http://localhost/cinestar_sweb_php/cines`)
     if (data.status == 200) {
         const cines = await data.json()
