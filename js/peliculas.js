@@ -17,20 +17,16 @@ const getPeliculas = async () => {
                        		</a>
                			</div>
                			<div class="boton-pelicula"> 
-               				<a href="https://www.youtube.com/${pelicula.Link}" target=_blank  onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )" >
+               				<a href="https://www.youtube.com/v/${pelicula.Link}" target=_blank  onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )" >
                					<img src="img/varios/btn-trailer.jpg" width="120" height="30" alt="Ver trailer"/>
                				</a>
                         </div> 
 					</div>
 					<img src="img/pelicula/${pelicula.id}.jpg" width="160" height="226"/><br/><br/>
 				</div>
-
-            
             `
         });
-        document.getElementById(contenido-interno).innerHTML = html
+        document.getElementById('contenido-interno').innerHTML = html
     }
-
     }
-    
 getPeliculas()

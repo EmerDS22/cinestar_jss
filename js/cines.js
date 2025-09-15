@@ -16,12 +16,9 @@ const getCines = async () => {
                 		<img src="img/varios/ico-info2.png" width="150" height="40"/>
                 	</a>
 				</div>
-
-            
             `
         });
-        document.getElementById(contenido-interno).innerHTML = html
+        document.getElementById('contenido-interno').innerHTML = html
     }
 }
-
 getCines()
